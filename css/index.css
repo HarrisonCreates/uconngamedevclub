@@ -50,6 +50,7 @@ body {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding-top: 5vh;
+  height: 100%;
   padding: 15px;
   grid-column: 1/2;
   -webkit-transition: 0.25s ease;
