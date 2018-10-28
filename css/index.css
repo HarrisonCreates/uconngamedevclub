@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400');
+
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.pageWrapper{
+  display: flex;
+  flex-direction: column;
+  width: inherit;
+  height: auto;
+}
+
+.pageWrapper > .topNav{
+  width: 100%;
+  background-color: #383838;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.pageWrapper > .topNav > .hamburgerMenu{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 15px;
+  grid-column: 1/2;
+  transition: 0.25s ease;
+}
+
+.pageWrapper > .topNav > .hamburgerMenu > svg > g > path{
+  fill: #818181;
+}
+
+.pageWrapper > .topNav > .hamburgerMenu:hover{
+  cursor: pointer;
+  background-color: #222;
+  transition: 0.25s ease;
+}
+
+.pageWrapper > .topNav > .orgName{
+  color: #818181;
+  font-weight: 300;
+  padding-bottom: 5vh;
+  padding-top: 5vh;
+  grid-column: 2/-1;
+  font-size: 135%;
+  text-align: center;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.pageWrapper > .optionsNav{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: #323232;
+  grid-template-rows: 1fr;
+  width: 100%;
+}
+
+.pageWrapper > .optionsNav > div:hover{
+  background-color: #999;
+  cursor: pointer;
+}
+
+.pageWrapper > .optionsNav > .home{
+  grid-column: 1/2;
+  padding-top: 6vh;
+  padding-bottom: 6vh;
+}
+
+.pageWrapper > .optionsNav > .about{
+  grid-column: 2/3;
+  padding-top: 6vh;
+  padding-bottom: 6vh;
+}
+
+.pageWrapper > .optionsNav > .games{
+  grid-column: 3/4;
+}
+
+.pageWrapper > .optionsNav > .contact{
+  grid-column: 4/-1;
+  padding-top: 6vh;
+  padding-bottom: 6vh;
+}
