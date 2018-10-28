@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Ubuntu:300,400");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
 @import url("https://fonts.googleapis.com/css?family=Righteous");
 * {
   -webkit-box-sizing: border-box;
@@ -37,6 +38,22 @@ body {
           align-items: center; }
 
 .pageWrapper > .topNav > .hamburgerMenu {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.pageWrapper > .topNav > .hamburgerMenu > .bars {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,7 +75,7 @@ body {
   -webkit-transition: 0.25s ease;
   transition: 0.25s ease; }
 
-.pageWrapper > .topNav > .hamburgerMenu > svg > g > path {
+.pageWrapper > .topNav > .hamburgerMenu > .bars svg > g > path {
   fill: #818181; }
 
 .pageWrapper > .topNav > .hamburgerMenu:hover {
@@ -70,12 +87,26 @@ body {
 .pageWrapper > .topNav > .orgName {
   color: #818181;
   font-weight: 300;
-  padding-bottom: 5vh;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding-top: 5vh;
+  padding-bottom: 5vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   grid-column: 2/-1;
   font-size: 135%;
   text-align: center;
-  font-family: 'Ubuntu', sans-serif; }
+  font-family: 'Josefin Sans', sans-serif; }
 
 .pageWrapper > .optionsNav {
   -webkit-box-ordinal-group: 3;
@@ -91,23 +122,54 @@ body {
   background-color: #999;
   cursor: pointer; }
 
+.pageWrapper > .optionsNav > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 3vh;
+  padding-bottom: 3vh; }
+
+.pageWrapper > .optionsNav > div > svg {
+  padding: 0px;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease; }
+
+.pageWrapper > .optionsNav > div > svg > g {
+  fill: #818181;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease; }
+
+.pageWrapper > .optionsNav > div:hover > svg {
+  padding: 5px;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease; }
+
+.pageWrapper > .optionsNav > div:hover > svg > g {
+  fill: #323232;
+  -webkit-transition: 0.25s ease;
+  transition: 0.25s ease; }
+
 .pageWrapper > .optionsNav > .home {
-  grid-column: 1/2;
-  padding-top: 6vh;
-  padding-bottom: 6vh; }
+  grid-column: 1/2; }
 
 .pageWrapper > .optionsNav > .about {
-  grid-column: 2/3;
-  padding-top: 6vh;
-  padding-bottom: 6vh; }
+  grid-column: 2/3; }
 
 .pageWrapper > .optionsNav > .games {
   grid-column: 3/4; }
 
 .pageWrapper > .optionsNav > .contact {
-  grid-column: 4/-1;
-  padding-top: 6vh;
-  padding-bottom: 6vh; }
+  grid-column: 4/-1; }
 
 .pageWrapper > .introduction {
   -webkit-box-ordinal-group: 4;
@@ -132,7 +194,7 @@ body {
   color: #201f1f;
   background-color: rgba(129, 129, 129, 0.5);
   text-transform: uppercase;
-  font-family: 'Righteous', cursive;
+  font-family: 'Josefin Sans', sans-serif;
   -webkit-animation-name: slideIn;
           animation-name: slideIn;
   -webkit-animation-duration: 1s;
@@ -143,6 +205,11 @@ body {
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
+
+.pageWrapper > .introduction > .welcomeImg {
+  width: 100%;
+  height: 35vh;
+  background-color: black; }
 
 @-webkit-keyframes slideIn {
   0% {
