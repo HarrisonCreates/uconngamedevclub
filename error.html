@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uh Oh!</title>
+  </head>
+  <body>
+    <video src="images/error.mp4" autoplay loop poster="posterimage.jpg"></video>
+    <p>Whoops!</p>
+    <p>It looks like you're not viewing this website on a mobile device. Development for tablet and desktop layouts is underway, but in the meantime, please view this website on a mobile device!</p>
+  </body>
+</html>
+<style>
+  @import url('https://fonts.googleapis.com/css?family=Ubuntu:300,400');
+  *{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+  video{
+    width: 100vw;
+    position: absolute;
+    height: 100vh;
+    z-index: 1;
+  }
+
+  p{
+    background-color: rgba(255,255,255,0.5);
+    z-index: 2;
+  }
+
+  p:nth-child(2){
+    font-size: 150%;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    margin-bottom: 5vh;
+  }
+
+  p:nth-child(3){
+    text-align: center;
+    line-height: 3em;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+  }
+</style>

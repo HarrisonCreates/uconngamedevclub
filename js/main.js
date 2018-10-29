@@ -21,6 +21,6 @@ closeButton.addEventListener('click', function(){
 window.onload = function(){
   slideMenu.style.left= "-100%";
   if(bodyWidth > "500"){
-    window.open("https://www.youtube.com", '_blank');
+    window.open("https://harrisoncreates.github.io/uconngamedevclub/error.html", '_blank');
   }
 }
