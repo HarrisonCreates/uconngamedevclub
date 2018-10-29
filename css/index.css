@@ -40,8 +40,8 @@ body {
       -ms-flex-align: center;
           align-items: center;
   left: -100%;
-  -webkit-transition: 0.5s cubic-bezier(0.17, 0.67, 0.92, 0.12);
-  transition: 0.5s cubic-bezier(0.17, 0.67, 0.92, 0.12);
+  -webkit-transition: 0.75s cubic-bezier(1, -1, 0, 2);
+  transition: 0.75s cubic-bezier(1, -1, 0, 2);
   z-index: 2; }
 
 .pageWrapper > .slideInMenu > .closeButton > svg {
