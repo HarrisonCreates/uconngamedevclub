@@ -31,7 +31,7 @@ body {
   flex-direction: column;
   align-items: center;
   left: -100%;
-  transition: 0.4s cubic-bezier(1, -1, 0, 1.25);
+  transition: .5s cubic-bezier(.17,.67,.92,.12);
   z-index: 2;
 }
 
