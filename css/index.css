@@ -199,8 +199,8 @@ body {
           animation-name: slideIn;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
-  -webkit-animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
-          animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+  -webkit-animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 1.5);
+          animation-timing-function: cubic-bezier(0.17, 0.67, 0.83, 1.5);
   -webkit-animation-iteration-count: 1;
           animation-iteration-count: 1;
   -webkit-animation-fill-mode: forwards;
@@ -221,7 +221,7 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   padding-top: 5vh;
-  padding-bottom: 15vh;
+  padding-bottom: 5vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -229,9 +229,6 @@ body {
   font-size: 100%;
   color: #888;
   font-family: 'Josefin Sans', sans-serif;
-  background-color: #181717;
-  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
-          clip-path: polygon(0 0, 100% 0%, 100% 75%, 0% 100%);
   width: 100vw; }
 
 .pageWrapper > .introduction > p:nth-child(3) span {
@@ -240,6 +237,16 @@ body {
   margin-bottom: 1.5vh;
   color: #201F1F;
   padding-left: 10vw;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 0.25s;
+          animation-duration: 0.25s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: fowards;
+          animation-fill-mode: fowards;
   padding-right: 10vw;
   font-family: 'Righteous', cursive;
   -webkit-clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
@@ -264,25 +271,34 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding-top: 15vh;
+  padding-top: 10vh;
   padding-bottom: 10vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: -22.9%;
+  /*margin-top: -22.9%;*/
   text-align: justify;
   font-size: 100%;
   color: #828282;
   font-family: 'Josefin Sans', sans-serif;
   background-color: #323232;
-  -webkit-clip-path: polygon(0 29%, 100% 0%, 100% 100%, 0% 100%);
-          clip-path: polygon(0 29%, 100% 0%, 100% 100%, 0% 100%);
+  /*clip-path: polygon(0 29%, 100% 0%, 100% 100%, 0% 100%);*/
   width: 100vw; }
 
 .pageWrapper > .introduction > p:nth-child(4) span {
   font-size: 150%;
   margin-top: 1.5vh;
   margin-bottom: 1.5vh;
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 0.25s;
+          animation-duration: 0.25s;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-fill-mode: fowards;
+          animation-fill-mode: fowards;
   color: #828282;
   padding-left: 10vw;
   padding-right: 10vw;
@@ -300,6 +316,25 @@ body {
   padding-right: 13vw;
   font-size: 175%; }
 
+@-webkit-keyframes fadeIn {
+  0% {
+    padding-left: 0vw;
+    padding-right: 0vw;
+    opacity: 0; }
+  100% {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    opacity: 1; } }
+
+@keyframes fadeIn {
+  0% {
+    padding-left: 0vw;
+    padding-right: 0vw;
+    opacity: 0; }
+  100% {
+    padding-left: 10vw;
+    padding-right: 10vw;
+    opacity: 1; } }
 @-webkit-keyframes slideIn {
   0% {
     width: 0%;
@@ -316,7 +351,6 @@ body {
     padding-bottom: 5vh;
     -webkit-clip-path: circle(70.7% at 50% 50%);
             clip-path: circle(70.7% at 50% 50%); } }
-
 @keyframes slideIn {
   0% {
     width: 0%;
