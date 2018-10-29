@@ -2,7 +2,7 @@
 Website (and code) for the Game Development Club at the University of Connecticut
 
 Hello! My name is Harrison Burr, and I'm the developer for this website. Please note my web skills are still developing, so
-this README may get updated as new features 
+this README may get updated as new features are implemented.
 
 ***PLEASE NOTE***
 Any and all vector images used which do not utilize a Creative Commons or WTFPL lisences will be attributed their proper credits.
