@@ -22,7 +22,7 @@ body {
   height: auto;
 }
 
-.pageWrapper > .slideInMenu{
+.pageWrapper > .slideInMenu {
   width: 75vw;
   height: 100vh;
   background-color: white;
@@ -31,26 +31,26 @@ body {
   flex-direction: column;
   align-items: center;
   left: -100%;
-  transition: .4s cubic-bezier(1, -1, 0, 1.25);
+  transition: 0.4s cubic-bezier(1, -1, 0, 1.25);
   z-index: 2;
 }
 
-.pageWrapper > .slideInMenu > .closeButton > svg{
+.pageWrapper > .slideInMenu > .closeButton > svg {
   --width: 15%;
   width: var(--width);
   position: relative;
   left: calc(100% - var(--width));
-  transition: .4s cubic-bezier(1, -1, 0, 1.25);
+  transition: 0.4s cubic-bezier(1, -1, 0, 1.25);
   padding: 10px;
 }
 
-.pageWrapper > .slideInMenu > .closeButton > svg:hover{
+.pageWrapper > .slideInMenu > .closeButton > svg:hover {
   padding: 5px;
   cursor: pointer;
-  transition: .4s cubic-bezier(1, -1, 0, 1.25);
+  transition: 0.4s cubic-bezier(1, -1, 0, 1.25);
 }
 
-.pageWrapper > .slideInMenu > div{
+.pageWrapper > .slideInMenu > div {
   align-self: flex-start;
   padding-top: 5vh;
   font-family: 'Josefin Sans', cursive;
@@ -70,7 +70,7 @@ body {
   align-items: center;
 }
 
-.pageWrapper > .topNav > .hamburgerMenu{
+.pageWrapper > .topNav > .hamburgerMenu {
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -78,7 +78,7 @@ body {
   justify-content: center;
 }
 
-.pageWrapper > .topNav > .hamburgerMenu > .bars{
+.pageWrapper > .topNav > .hamburgerMenu > .bars {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -131,7 +131,7 @@ body {
   cursor: pointer;
 }
 
-.pageWrapper > .optionsNav > div{
+.pageWrapper > .optionsNav > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -140,22 +140,22 @@ body {
   padding-bottom: 3vh;
 }
 
-.pageWrapper > .optionsNav > div > svg{
-  padding: 0px;
+.pageWrapper > .optionsNav > div > svg {
+  padding: 0;
   transition: 0.25s ease;
 }
 
-.pageWrapper > .optionsNav > div > svg > g{
+.pageWrapper > .optionsNav > div > svg > g {
   fill: #818181;
   transition: 0.25s ease;
 }
 
-.pageWrapper > .optionsNav > div:hover > svg{
+.pageWrapper > .optionsNav > div:hover > svg {
   padding: 5px;
   transition: 0.25s ease;
 }
 
-.pageWrapper > .optionsNav > div:hover > svg > g{
+.pageWrapper > .optionsNav > div:hover > svg > g {
   fill: #323232;
   transition: 0.25s ease;
 }
@@ -176,7 +176,7 @@ body {
   grid-column: 4/-1;
 }
 
-.pageWrapper > .introduction{
+.pageWrapper > .introduction {
   order: 3;
   width: 100%;
   height: auto;
@@ -186,7 +186,7 @@ body {
   align-items: center;
 }
 
-.pageWrapper > .introduction > p:nth-child(1){
+.pageWrapper > .introduction > p:nth-child(1) {
   text-align: center;
   color: #201f1f;
   background-color: rgba(#818181, 0.5);
@@ -199,13 +199,13 @@ body {
   animation-fill-mode: forwards;
 }
 
-.pageWrapper > .introduction > .welcomeImg{
+.pageWrapper > .introduction > .welcomeImg {
   width: 100%;
   height: 35vh;
   background-color: black;
 }
 
-.pageWrapper > .introduction > p:nth-child(3){
+.pageWrapper > .introduction > p:nth-child(3) {
   text-align: justify;
   display: flex;
   flex-direction: column;
@@ -219,7 +219,7 @@ body {
   width: 100vw;
 }
 
-.pageWrapper > .introduction > p:nth-child(3) span{
+.pageWrapper > .introduction > p:nth-child(3) span {
   font-size: 150%;
   margin-top: 1.5vh;
   margin-bottom: 1.5vh;
@@ -239,13 +239,13 @@ body {
   transition: 0.25s ease;
 }
 
-.pageWrapper > .introduction > p:nth-child(3) span:hover{
+.pageWrapper > .introduction > p:nth-child(3) span:hover {
   padding-left: 13vw;
   padding-right: 13vw;
   font-size: 175%;
 }
 
-.pageWrapper > .introduction > p:nth-child(4){
+.pageWrapper > .introduction > p:nth-child(4) {
   text-align: justify;
   display: flex;
   flex-direction: column;
@@ -262,7 +262,7 @@ body {
   width: 100vw;
 }
 
-.pageWrapper > .introduction > p:nth-child(4) span{
+.pageWrapper > .introduction > p:nth-child(4) span {
   font-size: 150%;
   margin-top: 1.5vh;
   margin-bottom: 1.5vh;
@@ -282,35 +282,35 @@ body {
   transition: 0.25s ease;
 }
 
-.pageWrapper > .introduction > p:nth-child(4) span:hover{
+.pageWrapper > .introduction > p:nth-child(4) span:hover {
   padding-left: 13vw;
   padding-right: 13vw;
   font-size: 175%;
 }
-
-@keyframes fadeIn{
-  0%{
-    padding-left: 0vw;
-    padding-right: 0vw;
+@keyframes fadeIn {
+  0% {
+    padding-left: 0;
+    padding-right: 0;
     opacity: 0;
   }
-  100%{
+
+  100% {
     padding-left: 10vw;
     padding-right: 10vw;
     opacity: 1;
   }
 }
-
-@keyframes slideIn{
-  0%{
-    width: 0%;
+@keyframes slideIn {
+  0% {
+    width: 0;
     font-size: 0;
     opacity: 0;
     padding-top: 5vh;
     padding-bottom: 5vh;
     clip-path: circle(50% at 50% 50%);
   }
-  100%{
+
+  100% {
     width: 100%;
     opacity: 1;
     padding-top: 5vh;

@@ -17,3 +17,10 @@ hamburger.addEventListener('click', function(){
 closeButton.addEventListener('click', function(){
   slideMenu.style.left = "-100%";
 });
+
+window.onload = function(){
+  slideMenu.style.left= "-100%";
+  if(bodyWidth > "500"){
+    window.open("https://www.youtube.com", '_blank');
+  }
+}
