@@ -24,6 +24,51 @@ body {
   width: inherit;
   height: auto; }
 
+.pageWrapper > .slideInMenu {
+  width: 75vw;
+  height: 100vh;
+  background-color: white;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  left: -100%;
+  -webkit-transition: 0.4s cubic-bezier(1, -1, 0, 1.25);
+  transition: 0.4s cubic-bezier(1, -1, 0, 1.25);
+  z-index: 2; }
+
+.pageWrapper > .slideInMenu > .closeButton > svg {
+  --width: 15%;
+  width: var(--width);
+  position: relative;
+  left: calc(100% - var(--width));
+  -webkit-transition: 0.4s cubic-bezier(1, -1, 0, 1.25);
+  transition: 0.4s cubic-bezier(1, -1, 0, 1.25);
+  padding: 10px; }
+
+.pageWrapper > .slideInMenu > .closeButton > svg:hover {
+  padding: 5px;
+  cursor: pointer;
+  -webkit-transition: 0.4s cubic-bezier(1, -1, 0, 1.25);
+  transition: 0.4s cubic-bezier(1, -1, 0, 1.25); }
+
+.pageWrapper > .slideInMenu > div {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  padding-top: 5vh;
+  font-family: 'Josefin Sans', cursive;
+  color: #828282;
+  padding-bottom: 5vh;
+  padding-left: 5vw;
+  width: 100%; }
+
 .pageWrapper > .topNav {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;

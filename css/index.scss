@@ -22,6 +22,44 @@ body {
   height: auto;
 }
 
+.pageWrapper > .slideInMenu{
+  width: 75vw;
+  height: 100vh;
+  background-color: white;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  left: -100%;
+  transition: .4s cubic-bezier(1, -1, 0, 1.25);
+  z-index: 2;
+}
+
+.pageWrapper > .slideInMenu > .closeButton > svg{
+  --width: 15%;
+  width: var(--width);
+  position: relative;
+  left: calc(100% - var(--width));
+  transition: .4s cubic-bezier(1, -1, 0, 1.25);
+  padding: 10px;
+}
+
+.pageWrapper > .slideInMenu > .closeButton > svg:hover{
+  padding: 5px;
+  cursor: pointer;
+  transition: .4s cubic-bezier(1, -1, 0, 1.25);
+}
+
+.pageWrapper > .slideInMenu > div{
+  align-self: flex-start;
+  padding-top: 5vh;
+  font-family: 'Josefin Sans', cursive;
+  color: #828282;
+  padding-bottom: 5vh;
+  padding-left: 5vw;
+  width: 100%;
+}
+
 .pageWrapper > .topNav {
   order: 1;
   width: 100%;
