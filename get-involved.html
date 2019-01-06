@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Get Involved!!</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <div class="video">
+    <video src="images/Love-Coding.mp4" autoplay></video>
+  </div>
+  <div class="center">
+    <p class="welcome">Welcome to UCONN Game Development Club!</p>
+    <p class="instructions">Please enter the requested information below to receive club emails!</p>
+    <form action="https://formspree.io/your@email.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name">
+      <input type="email" name="_replyto" placeholder="Your Email">
+      <input type="submit" value="Send">
+    </form>
+  </div>
+</body>
+
+</html>
+<style media="screen">
+  @import url('https://fonts.googleapis.com/css?family=K2D');
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .video {
+    position: absolute;
+    width: 100%;
+    margin: 0;
+    top: 0;
+    left: 0;
+    padding: 0;
+    z-index: 0;
+  }
+
+  .center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1;
+    justify-content: center;
+  }
+
+  .center>.welcome {
+    font-family: 'K2D';
+    color: white;
+    font-size: 150%;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+
+  .center>.instructions {
+    font-family: 'K2D';
+    color: white;
+    font-size: 100%;
+    width: 90%;
+    text-align: center;
+  }
+
+  body>.center>form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 75px;
+    width: 90%;
+    justify-content: space-evenly;
+  }
+
+  .center>form>input[type="text"],
+  .center>form>input[type="email"] {
+    padding: 20px;
+    border-radius: 5px;
+    width: 100%;
+    align-self: center;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    margin-top: 2vh;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .center>form>input[type="submit"] {
+    width: 50%;
+    margin-top: 50px;
+    align-self: center;
+    padding: 20px 10px 20px 10px;
+    background-color: rgb(21, 190, 120);
+    text-transform: uppercase;
+    color: white;
+    font-size: 110%;
+    font-family: 'K2D';
+    border: 0;
+    border-radius: 5px;
+  }
+
+  @media screen and (min-width: 1024px) {
+    .center>form {
+      width: 25vw;
+    }
+
+    .center>form>input[type="text"],
+    .center>form>input[type="email"] {
+      width: 75%;
+    }
+
+
+  }
+</style>
