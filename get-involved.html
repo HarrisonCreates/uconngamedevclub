@@ -8,13 +8,12 @@
 </head>
 
 <body>
-  <div class="video">
-    <video src="images/Love-Coding.mp4" autoplay loop></video>
-  </div>
   <div class="center">
     <p class="welcome">Welcome to UCONN Game Development Club!</p>
-    <p class="instructions">Please enter the requested information below to receive club emails!</p>
-    <form action="https://formspree.io/your@email.com" method="POST">
+    <p class="instructions">Please enter your Name and your Email below to register for club information!</p>
+    <p class="addendum">(We will not be send you spam emails! This is purely for registration! If you would like more info on club events, announcements, opportunities, and activities, we'll be sending a link to our official Discord in your
+      confirmation email.)</p>
+    <form action="https://formspree.io/joshua.hirshfield@uconn.edu" method="POST">
       <input type="text" name="name" placeholder="Your Name">
       <input type="email" name="_replyto" placeholder="Your Email">
       <input type="submit" value="Send">
@@ -40,16 +39,10 @@
     width: 100vw;
     height: 100vh;
     overflow: hidden;
-  }
-
-  .video {
-    position: absolute;
-    width: 100%;
-    margin: 0;
-    top: 0;
-    left: 0;
-    padding: 0;
-    z-index: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('images/bgInv.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   .center {
@@ -76,10 +69,20 @@
     text-align: center;
   }
 
+  .center>.addendum {
+    font-family: 'K2D';
+    margin-top: 25px;
+    color: white;
+    font-size: 100%;
+    width: 90%;
+    text-align: justify;
+    margin-btotom: 25px;
+  }
+
   body>.center>form {
     display: flex;
     flex-direction: column;
-    margin-top: 75px;
+    margin-top: 25px;
     width: 90%;
     justify-content: space-evenly;
   }
@@ -113,12 +116,22 @@
   }
 
   @media screen and (min-width: 1024px) {
-    .center>form {
+
+    body>.center {
+      width: 50vw;
+    }
+
+    body>.center>form {
       width: 25vw;
     }
 
     .center>form>input[type="text"],
     .center>form>input[type="email"] {
+      width: 75%;
+    }
+
+    .center>.addendum {
+      text-align: center;
       width: 75%;
     }
 
